@@ -4,13 +4,13 @@ body {
   background: #d5dce6;
 }
 
-header {
+/* header {
   width: 100%;
   min-height: 128px;
   margin-top: 5px;
   display: flex;
   position: absolute;
-}
+} */
 
 .wrapper {
   position: relative;
@@ -24,19 +24,27 @@ header {
   flex-direction: row;
 }
 
-.wrapper main {
+main {
   min-width: 1200px;
   min-height: 400px;
   background-color: #fff;
 }
 
-.wrapper aside {
+main div {
+  height: 1080px;
+}
+
+.empty {
+  height: 540px;
+}
+
+aside {
   max-width: 500px;
   min-height: 400px;
   background-color: #000;
 }
 
-.wrapper aside .photo {
+aside .photo {
   width: 320px;
   height: 320px;
   padding: 28px;
@@ -48,14 +56,14 @@ header {
   border-radius: 100%;
 }
 
-.wrapper aside .photo img {
+aside .photo img {
   max-width: 320px;
   max-height: 320px;
   border-radius: 320px;
   border: #000 18px solid;
 }
 
-.wrapper aside .name {
+aside .name {
   background-color: rgb(255, 136, 0);
   color: #fff;
   height: 192px;
@@ -70,14 +78,6 @@ header {
   position: relative;
   left: 256px;
   font-size: 3em;
-}
-
-main div {
-  height: 1080px;
-}
-
-.empty {
-  height: 540px;
 }
 
 /* Formularz */
