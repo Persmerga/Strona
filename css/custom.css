@@ -1,7 +1,31 @@
-body {
-  max-width: 1320px;
-  min-height: 1080px;
-  background: #d5dce6;
+/* 
+spytać się co to może być!
+
+* {
+  box-sizing: border-box;
+} 
+ 
+*/
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .aside {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .main,
+  .aside {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+    background: #d5dce6;
+  }
 }
 
 /* header {
@@ -13,25 +37,26 @@ body {
 } */
 
 .wrapper {
-  position: relative;
-  max-width: 100%;
-
-  margin: 80px;
+  position: absolute;
+  /* width: 85%; */
+  /* margin: 80px; */
   background: #ffffff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 0 auto;
   flex-direction: row;
+  top: 32px;
 }
 
 main {
-  min-width: 1200px;
-  min-height: 400px;
+  float: left;
+  width: 60%;
   background-color: #fff;
 }
 
-main div {
-  height: 1080px;
+main .exp,
+main .edu {
+  height: 256px;
 }
 
 .empty {
@@ -39,21 +64,21 @@ main div {
 }
 
 aside {
-  max-width: 500px;
-  min-height: 400px;
+  float: left;
+  width: 40%;
   background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-variant-caps: all-petite-caps;
 }
 
 aside .photo {
-  width: 320px;
-  height: 320px;
-  padding: 28px;
   position: absolute;
+  float: left;
   left: 256px;
   top: 64px;
   z-index: 1;
   margin: 20px 10px 20px 5px;
-  border-radius: 100%;
 }
 
 aside .photo img {
@@ -67,19 +92,41 @@ aside .name {
   background-color: rgb(255, 136, 0);
   color: #fff;
   height: 192px;
-  width: 1200px;
+  width: 180%;
   position: relative;
+  float: right;
   top: 156px;
-  right: 700px;
+  /* right: 700px; */
+}
+
+aside div {
+  position: relative;
+  top: 256px;
 }
 
 .wrapper .name h1,
 .wrapper .name h2 {
   position: relative;
+  top: 20px;
   left: 256px;
   font-size: 3em;
+  margin: 0 auto;
 }
 
+/*  
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 /* Formularz */
 
 /*
